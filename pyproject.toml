@@ -12,7 +12,16 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "drake>=1.50.0",
+    "lcm>=1.5.1",
+    "libero>=0.1.1",
+    "matplotlib>=3.10.6",
+    "numpy>=2.3.3",
+    "pyyaml>=6.0.2",
 ]
+
+[project.scripts]
+libero-lcm = "libero_lcm.core.__main__:main"
 
 [dependency-groups]
 dev = [
@@ -28,7 +37,10 @@ test = [
 source = "vcs"
 
 [tool.hatch.build.hooks.vcs]
-version-file = "src/carbonsix_python_template/__version__.py"  #chage this folder name!
+version-file = "src/libero_lcm/__version__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/libero_lcm"]
 
 [tool.pyright]
 # ignore virtual environemtns, and generated LCM messge files

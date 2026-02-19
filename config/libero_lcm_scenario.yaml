@@ -1,0 +1,38 @@
+benchmark_name: libero_spatial
+task_order_index: 0
+task_id: 1
+
+# Leave null to use LIBERO's default bddl path.
+bddl_root: null
+
+camera_height: 256
+camera_width: 256
+
+# If true, simulator window stays open while env server runs.
+has_renderer: true
+has_offscreen_renderer: true
+
+lcm_url: udpm://239.255.76.67:7667?ttl=1
+command_channel: LIBERO_COMMAND
+hand_command_channel: LIBERO_HAND_COMMAND
+event_channel: LIBERO_EVENT
+state_channel: LIBERO_STATE
+robot_state_channel: LIBERO_ROBOT_STATE
+frame_channel: LIBERO_FRAME
+
+control_hz: 20.0
+action_dim: 7
+continuous_step_with_last_command: true
+auto_step_idle: false
+auto_reset_on_done: true
+gripper_open_mm: 110.0
+gripper_close_mm: 0.0
+max_camera_frames: 2
+frame_layout: horizontal
+flip_vertical: true
+
+# Interactive viewer settings.
+interactive_free_camera: true
+interactive_renderer: null
+interactive_render_camera: null
+lcm_show_native_viewer: true
