@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "carbonsix-python-template"
+dynamic = ["version"]
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "CarbonSix inc", email = "developers@carbon6robotics.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[dependency-groups]
+dev = [
+]
+format = [
+    "pre-commit>=4.2.0",
+]
+test = [
+    "pytest>=9.0.2",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/carbonsix_python_template/__version__.py"  #chage this folder name!
+
+[tool.pyright]
+# ignore virtual environemtns, and generated LCM messge files
+ignore = [".venv/*"]
+typeCheckingMode = "standard"
+venvPath = "."
+venv = ".venv"
+reportMissingImports = false
+
+[tool.pydoclint]
+style = "google"
+allow-init-docstring = true
+check-arg-order = true
+
+license-files = [
+  "LICENSE",
+  "THIRD_PARTY_LICENSE",
+]
+
+[tool.uv]
+default-groups = "all"
+keyring-provider = "subprocess"
+
+[[tool.uv.index]]
+default = true
+url = "https://pypi.org/simple"
+
+[[tool.uv.index]]
+name = "pytorch.org"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[[tool.uv.index]]
+name = "carbonsix-pypi"
+url = "https://carbonsix-156154234745.d.codeartifact.ap-northeast-1.amazonaws.com/pypi/pypi-server/simple/"
+explicit = true

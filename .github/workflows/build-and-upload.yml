@@ -1,0 +1,88 @@
+name: build and upload wheel
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+    tags:
+      - "*"
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build test-uv-ubuntu
+    runs-on:
+      - runs-on=${{ github.run_id }}
+      - runner=build-runner
+      - extras=s3-cache
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: run code-formatting
+        uses: pre-commit/action@v3.0.1
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Configure AWS credentials from Pulumi ESC
+        uses: pulumi/esc-action@v1
+        id: esc
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+        with:
+          environment: aws/aws-oidc-admin
+
+      - name: setup private pypi server
+        id: setup-private-pypi-server
+        uses: Carbon6Robotics/shared-github-action/wheel/keyring@main
+        with:
+          aws_access_key_id: ${{ steps.esc.outputs.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ steps.esc.outputs.AWS_SECRET_ACCESS_KEY }}
+          aws_session_token: ${{ steps.esc.outputs.AWS_SESSION_TOKEN }}
+
+      # - name: setup wheel virtual environment for test
+      #   shell: bash
+      #   run: |
+      #     uv sync --frozen --group test
+
+      # - name: pytest tests
+      #   uses: Carbon6Robotics/shared-github-action/pytest/run-and-summary@main
+      #   with:
+      #     uv_options: "--no-sync"
+
+      - name: Check third party license
+        uses: Carbon6Robotics/shared-github-action/thirdparty-license-checker@main
+        with:
+          codeartifact_token_path: ${{ steps.setup-private-pypi-server.outputs.codeartifact_token_path
+            }}
+
+      - name: Build Wheel
+        run: uv build --wheel
+
+    # Uncomment to upload wheel when your project is ready to be uploaded.
+    # - name: Upload Wheel to CodeArtifact
+    #   uses: Carbon6Robotics/shared-github-action/wheel/upload@main
+    #   with:
+    #     aws_access_key_id: ${{ steps.esc.outputs.AWS_ACCESS_KEY_ID }}
+    #     aws_secret_access_key: ${{ steps.esc.outputs.AWS_SECRET_ACCESS_KEY }}
+    #     aws_session_token: ${{ steps.esc.outputs.AWS_SESSION_TOKEN }}
+
+    # Uncomment to add a summary to the build, and change the package name to your own.
+    # - name: Build Summary
+    #   shell: bash
+    #   run: |
+    #     uv tool install hatch
+    #     echo "Version name" >> $GITHUB_STEP_SUMMARY
+    #     echo '```' >> $GITHUB_STEP_SUMMARY
+    #     echo "change-this-to-your-package-name==$(uvx hatch version)" >> $GITHUB_STEP_SUMMARY
+    #     echo '```' >> $GITHUB_STEP_SUMMARY

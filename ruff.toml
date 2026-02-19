@@ -1,0 +1,117 @@
+# Same as Black.
+line-length = 79
+
+# Force exclude, useful for precommits, see https://docs.astral.sh/ruff/settings/#force-exclude
+force-exclude = true
+
+# Exclude generated LCM files on top of commonly excluded files.
+extend-exclude = ["src/drake/*", "src/carbonsix_lcm/*.py"]
+
+[lint]
+select = [
+    "E",     # pycode style
+    "F",     # Pyflakes
+    "I",     # imposrt sorting
+    "D",     # pydocstyle
+    "UP006", # pyupgrade
+    "UP007",
+    "N801",  # naming rules
+    "N805",
+    "N807",
+    "N811",
+    "N812",
+    "N813",
+    "N814",
+    "N817",
+    "N818",
+    "N999",
+]
+ignore = [
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D203",
+    "D205",
+    "D212",
+    "D400",
+    "D401",
+    "D415",
+    "D417",
+    "E501",
+]
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "I",
+    "N",
+    "Q",
+    "S",
+    "T",
+    "W",
+    "ANN",
+    "ARG",
+    "BLE",
+    "COM",
+    "DJ",
+    "DTZ",
+    "EM",
+    "ERA",
+    "EXE",
+    "FBT",
+    "ICN",
+    "INP",
+    "ISC",
+    "NPY",
+    "PD",
+    "PGH",
+    "PIE",
+    "PL",
+    "PT",
+    "PTH",
+    "PYI",
+    "RET",
+    "RSE",
+    "RUF",
+    "SIM",
+    "SLF",
+    "TCH",
+    "TID",
+    "TRY",
+    "UP",
+    "YTT",
+]
+
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[lint.isort]
+section-order = [
+    "future",
+    "workaround",
+    "standard-library",
+    "third-party",
+    "first-party",
+    "local-folder",
+]
+known-third-party = ["wandb"]
+
+[lint.isort.sections]
+"workaround" = ["workaround_torch_101314_preload_cuda"]
+
+[lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[lint.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10

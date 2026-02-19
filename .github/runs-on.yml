@@ -1,0 +1,27 @@
+runners:
+  gpu-runner:
+    family:
+      - "g4dn.xlarge"
+      - "g4dn.2xlarge"
+      - "g5g.2xlarge"
+      - "g5g.4xlarge"
+      - "g4dn.4xlarge"
+      - "g4dn.8xlarge"
+      - "gr6.4xlarge"
+      - "g6.4xlarge"
+    image: ubuntu24-gpu-x64
+    spot: false
+    private: true
+    ssh: true
+
+  build-runner:
+    family:
+      - "m7i.large"
+      - "m7i-flex.large"
+      - "m7i.xlarge"
+      - "m7a.large"
+      - "m7a.xlarge"
+    image: ubuntu24-full-x64
+    spot: false
+    private: true
+    ssh: true

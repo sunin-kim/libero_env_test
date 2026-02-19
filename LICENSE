@@ -1,0 +1,126 @@
+END-USER LICENSE AGREEMENT (EULA) FOR SIGMAKIT PRODUCT
+
+This End-User License Agreement (this "EULA") is a legally binding agreement between you ("User") and CARBONSIX KOREA, INC. ("Company"), regarding the use of the SigmaKit Product.
+CARBONSIX KOREA, INC. is the authorized distributor and exclusive sublicensee of certain intellectual property related to the SigmaKit Product, which is owned by CARBONSIX, INC., a Delaware corporation (“Licensor”), and licensed to the Company under an exclusive license-back arrangement.
+
+BY CLICKING “I ACCEPT,” DOWNLOADING, INSTALLING, ACCESSING, OR USING THE SOFTWARE, YOU:
+(A) ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTOOD THIS EULA;
+(B) AGREE TO BE LEGALLY BOUND BY ITS TERMS ON BEHALF OF YOURSELF AND ANY ENTITY YOU REPRESENT; AND
+(C) REPRESENT AND WARRANT THAT YOU HAVE FULL AUTHORITY TO ENTER INTO THIS EULA.
+
+IF YOU DO NOT AGREE TO ALL THE TERMS AND CONDITIONS OF THIS EULA, DO NOT INSTALL, ACCESS, OR USE THE SOFTWARE.
+
+DEFINITIONS
+For purposes of this EULA, the following terms shall have the meanings set forth below:
+- "Product" refers to the SigmaKit hardware together with the Software and any associated documentation, libraries, or firmware provided under this EULA.
+- “Software” refers to the software programs provided by the Company under this EULA, including any updates, upgrades, bug fixes, patches, and related documentation. For clarity, the Software includes the Library.
+- "Library" refers to software libraries, including all associated files, documentation, modifications, and updates provided by the Company. The Library is part of the Software.
+- "Equipment" refers to the SigmaKit hardware with which the Library and Software are provided.
+- "Data" refers to any input data, information, or content that is generated, collected or used by the User in connection with the Product.
+- "Model" refers to any artificial intelligence (AI) or machine learning model that is generated, trained, or inferred using the Product.
+- "User" refers to the individual or entity entering into this EULA with the Company.
+- "Company" refers to CARBONSIX KOREA, INC., acting as the worldwide authorized distributor and exclusive sublicensee of the Product, under license from CARBONSIX, INC., the original Licensor.
+
+
+LICENSE GRANT
+The Company grants the User a limited, non-exclusive, non-transferable, non-sublicensable, and revocable license to use the Product solely for the User’s internal business purposes, including data collection and model inference, subject to this EULA. The license granted under this EULA is limited to use within the Territory. For purposes of this EULA, “Territory” means [Republic of Korea]. All rights not expressly granted to the User under this EULA are reserved by the Company or its Licensor. The Company and/or its Licensor retain all right, title, and interest, including all intellectual property (IP) rights, in and to the Software and any related materials.
+
+This license does not permit:
+- Redistribution, sublicensing, or resale of the Product in whole or in part; or
+- Commercial redistribution of Data or Model generated through the use of the Product, except as expressly authorized in writing by the Company.
+
+
+RESTRICTIONS
+Except as expressly permitted under this EULA, the User shall not, and shall not permit any third party to:
+- Modify, adapt, translate, reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code of the Product, or create derivative works based on the Product.
+- Distribute, lease, rent, assign, transfer, sublicense, sell, or otherwise make the Product available to third parties.
+- Remove, alter, or obscure any copyright, trademark, or proprietary notices in the Product.
+- Use the Product for any purpose not expressly authorized under this EULA, including for any unlawful or unlicensed purpose.
+- Bypass or disable any security or technical protection measures.
+- Integrate the Library into third-party products without the Company’s prior written consent.
+- Use the Library independently of the Equipment.
+- Disclose, publish, or otherwise make available any confidential or proprietary information of the Company contained in or derived from the Product without the Company’s prior written consent.
+
+
+OWNERSHIP
+- Product IP: All intellectual property rights in and to the Product are owned by CARBONSIX, INC. and exclusively licensed to the Company. The Product is licensed, not sold.
+- User Data and Models: The User retains ownership and control of Data and Models generated through using the Product.
+- Company Rights: The User grants the Company a perpetual, worldwide, royalty-free, irrevocable, and sublicensable license to use, reproduce, modify, analyze, distribute, and create derivative works from the Data and Models for any lawful business purpose, including commercial development and the training, evaluation, and improvement of machine learning or AI models. The Company shall process any Data that constitutes personal information in accordance with applicable data protection laws (e.g., GDPR, CCPA).
+
+
+TERMINATION
+This EULA shall remain in effect from the earlier of the User’s acceptance or first use of the Software and shall continue until terminated in accordance with this Section. The Company may terminate this EULA immediately upon written notice if: (i) the User materially breaches its terms; (ii) the User becomes insolvent, files for bankruptcy, or is placed in receivership; or (iii) the Company determines, in its sole discretion, that continued use of the Product would cause legal or regulatory issues.
+
+Upon termination of this EULA:
+- The User must cease all use of the Product and destroy all copies of the Software and related materials in its possession or control. The User shall, within ten (10) business days, certify in writing to the Company that such destruction has been completed.
+- User Data and Models shall remain the property of the User, subject to any licenses previously granted to the Company under this EULA, which shall survive termination.
+- All licenses granted to the User under this EULA shall immediately terminate.
+
+
+NO WARRANTY
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT (INCLUDING THE SOFTWARE, LIBRARY, AND ANY RELATED COMPONENTS) IS PROVIDED "AS IS," “WHERE IS,” AND “AS AVAILABLE,” WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED STATUTORY, OR OTHERWISE. COMPANY AND ITS LICENSOR EXPRESSLY DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, TITLE, SYSTEM INTEGRATION, ACCURACY, OR THAT THE PRODUCT WILL OPERATE WITHOUT INTERRUPTION, ERROR, VULNERABILITIES, SECURITY BREACHES, OR MALICIOUS CODE. WITHOUT LIMITING THE FOREGOING, THE COMPANY AND ITS LICENSOR DO NOT WARRANT THAT THE PRODUCT WILL BE UNINTERRUPTED, TIMELY, ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. THE ENTIRE RISK AS TO THE RESULTS AND PERFORMANCE OF THE PRODUCT REMAINS WITH THE USER.
+
+
+LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COMPANY, ITS LICENSOR, OR THEIR RESPECTIVE AFFILIATES, SUPPLIERS, OR CONTRACTORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR DAMAGES FOR LOST PROFITS, LOST REVENUE, LOST BUSINESS OPPORTUNITIES, LOSS OF DATA, OR BUSINESS INTERRUPTION, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, TORT, STRICT LIABILITY, NEGLIGENCE, OR OTHERWISE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+IN NO EVENT SHALL THE COMPANY’S TOTAL LIABILITY ARISING OUT OF OR RELATED TO THIS EULA OR THE USE OF THE PRODUCT EXCEED THE AMOUNTS PAID BY THE USER TO THE COMPANY FOR THE PRODUCT IN THE TWELVE (12) MONTHS PRECEDING THE EVENT GIVING RISE TO SUCH LIABILITY.
+
+
+INDEMNIFICATION
+The User shall indemnify, defend, and hold harmless the Company, the Licensor, and their respective affiliates, suppliers, and resellers from and against any and all claims, liabilities, damages, losses, costs, and expenses (including reasonable attorneys’ fees and settlement costs) arising out of or relating to:
+(a) the User’s use of the Product in violation of this EULA or applicable law;
+(b) any Data or content provided or processed by the User through the Product; or
+(c) the User’s reproduction, distribution, or other exploitation of the Product not expressly authorized under this EULA.
+
+
+DATA PRIVACY AND CLOUD TRAINING
+If cloud functionality is enabled, Data may be securely uploaded to the Company’s infrastructure for purposes of model training, debugging, Product improvement, and technical support.
+- The User remains solely responsible for ensuring compliance with all applicable data laws and privacy laws.
+- The Company will apply industry-standard safeguards and will delete or anonymize Data when it is no longer necessary.
+- The User shall not upload personally identifiable information (PII) unless legally permitted, with all required consents obtained, and in compliance with applicable law.
+- The User represents and warrants that it has obtained all necessary rights, consents, and authorizations to provide such Data to the Company for the purposes described in this EULA.
+
+
+UPDATES
+The Company may provide updates, bug fixes, or enhancements at its discretion.
+
+
+EXPORT CONTROLS
+The User agrees to comply with all applicable export control laws, including those of the U.S. and the Republic of Korea, and the User shall not to export, re-export, or transfer, directly or indirectly, the Product to prohibited countries or entities. The User shall be solely responsible for ensuring compliance with such laws and regulations and agrees to indemnify, defend, and hold harmless the Company and the Licensor from and against any claims, damages, penalties, or liabilities arising out of or related to the User’s failure to comply with applicable export control or sanctions laws.
+
+
+GOVERNING LAW
+This EULA shall be governed by and construed under the laws of the Republic of Korea, without regard to conflict of law principles. For disputes involving IP ownership, the governing law shall be that of Delaware, United States of America, without regard to conflict of law principles.
+
+
+ENTIRE AGREEMENT
+This EULA constitutes the entire agreement between the User and the Company with respect to the Product, superseding all prior agreements, understandings, and communications, whether written or oral, except for any separate privacy or data processing agreements.
+
+
+SEVERABILITY
+If any provision of this EULA is held invalid or unenforceable, the remaining provisions shall remain in full force and effect.
+
+
+ACKNOWLEDGMENT
+By downloading, installing, or using the Software, the User acknowledges that it has read and understood this EULA and agrees to be bound by its terms and conditions.
+
+
+WAIVER
+The failure or delay of the Company in enforcing any provision of this EULA shall not constitute a waiver of such provision or any other provision. Any waiver must be in writing and signed by the Company, and a waiver in one instance shall not constitute a waiver in any subsequent instance.
+
+
+FORCE MAJEURE
+The Company shall not be liable for any failure or delay in the performance of its obligations under this EULA to the extent caused by circumstances beyond its reasonable control, including labor disputes, civil commotion, war, fires, floods, natural disasters, epidemics, governmental orders or restrictions, internet or telecommunications failures, cyberattacks, or acts of God. In such event, the Company’s obligations shall be suspended for the duration of the delay and for a reasonable period thereafter.
+
+
+MODIFICATION
+The Company may, in its sole discretion, modify, amend, or update the terms of this EULA from time to time. Any such changes shall become effective fourteen (30) days after notice to the User, which may be provided through the Product, the Company’s website, or by email. If the User does not agree to the revised terms, the User may terminate this EULA by ceasing use of the Product and providing written notice of termination to the Company before the effective date of the changes. Continued use of the Product after the effective date of any modifications shall constitute the User’s acceptance of the revised terms. The Company may also modify, suspend, or discontinue any features or functionality of the Product at any time without liability, provided that such modifications do not materially reduce the core functionality of the Product.
+
+
+
+CONTACT INFORMATION
+
+CARBONSIX KOREA, INC.
+7F, 331, Gangnam-daero, Seocho-gu, Seoul, 06627, Republic of Korea
+contact.kr@carbon6robotics.com
+https://www.carbon6robotics.com
